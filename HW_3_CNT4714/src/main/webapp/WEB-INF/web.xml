@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<web-app>
+
+<!-- General description of your Web application -->
+
+
+<display-name>Project3</display-name>
+
+<description>This is a web application </description>
+
+<!-- Servlet definitions -->
+
+
+
+<servlet>
+
+<servlet-name>alpha</servlet-name>
+<!--  --><!-- <jsp-file>rootHomePage.jsp</jsp-file> -->
+
+<description>A simple servlet </description>
+
+<servlet-class>rootHomePage</servlet-class>
+
+</servlet>
+
+
+<!-- Servlet mapping -->
+<servlet-mapping>
+
+<servlet-name>alpha</servlet-name>
+
+<!--  <url-pattern>/rootHome.jsp</url-pattern>-->
+<url-pattern>/rootHomePage</url-pattern>
+
+</servlet-mapping>
+
+
+<servlet>
+
+<servlet-name>beta</servlet-name>
+<!--  <jsp-file>clientHomePage.jsp</jsp-file>-->
+
+<description>A simple servlet </description>
+
+<servlet-class>clientHomePage</servlet-class>
+
+</servlet>
+
+
+
+<!--  Servlet mapping -->
+-<servlet-mapping>
+
+<servlet-name>beta</servlet-name>
+
+<url-pattern>/clientHomePage</url-pattern>
+
+</servlet-mapping>
+
+
+</web-app>
+
+
